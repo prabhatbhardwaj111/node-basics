@@ -1,6 +1,6 @@
 # node-basics
 
-# Create a simple node server
+### Create a simple node server
 
 ```bash
 mkdir server
@@ -19,7 +19,7 @@ console.log('Node.js web server at port 8000 is running..');
 
 ```
 
-# Create express server
+### Create express server
 
 ```bash
 mkdir create-express-server
