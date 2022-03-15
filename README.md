@@ -52,3 +52,34 @@ node index.js
 Server is running at port 3000
 ```
 
+### Callbacks Function
+Callback function pass in to a outer function as a parameters to perform an action inside the outer function.
+
+Callbacks make sure that a function is not going to run before a task is completed but will run right after the task has completed. It helps us develop asynchronous JavaScript code and keeps us safe from problems and errors
+
+```js
+function greeting(name) {
+  alert('Hello ' + name);
+}
+
+function processUserInput(callback) {
+  var name = prompt('Please enter your name.');
+  callback(name);
+}
+
+processUserInput(greeting);
+```
+
+### Anonymous Function?
+
+
+Alternatively, we can define a function directly inside another function, instead of calling it. It will look like this:
+
+```js
+setTimeout(function() {  
+    console.log("This message is shown after 3 seconds");
+}, 3000);
+```
+As we can see, the callback function here has no name and a function definition without a name in JavaScript is called as an “anonymous function”. 
+
+
